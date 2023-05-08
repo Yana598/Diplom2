@@ -3,7 +3,7 @@ package data;
 public class ResponseData {
 
     private Boolean success;
-    private User1 user;
+    private User user;
     private String accessToken;
     private String refreshToken;
 
@@ -11,7 +11,7 @@ public class ResponseData {
         return success;
     }
 
-    public User1 getUser() {
+    public User getUser() {
         return user;
     }
 
@@ -26,7 +26,7 @@ public class ResponseData {
         this.success = success;
     }
 
-    public void setUser(User1 user) {
+    public void setUser(User user) {
         this.user = user;
     }
 
@@ -40,7 +40,7 @@ public class ResponseData {
 private ResponseData(){
 
 }
-private ResponseData(String success,User1 user, String accessToken,String refreshToken){
+private ResponseData(String success,User user, String accessToken,String refreshToken){
        this.success = Boolean.valueOf(success);
        this.user = user;
        this.accessToken = accessToken;

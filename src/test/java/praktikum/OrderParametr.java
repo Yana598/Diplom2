@@ -12,7 +12,7 @@ import org.junit.Before;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.junit.runners.Parameterized;
-import spec.ScooterRentSpec;
+import spec.BurgerRentSpec;
 import userUser.UserClient;
 
 import java.util.List;
@@ -46,7 +46,7 @@ public class OrderParametr {
     public void setUp() {
         user = randomUser();
         userClient = new UserClient();
-        RestAssured.baseURI = ScooterRentSpec.BASE_URI;
+        RestAssured.baseURI = BurgerRentSpec.BASE_URI;
     }
 
     @Test

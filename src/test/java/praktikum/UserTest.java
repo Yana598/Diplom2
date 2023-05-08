@@ -11,7 +11,7 @@ import orderOrder.OrderCheck;
 import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
-import spec.ScooterRentSpec;
+import spec.BurgerRentSpec;
 import userUser.UserClient;
 
 import static data.UserCreds.credsFrom;
@@ -32,7 +32,7 @@ public class UserTest {
     public void setUp() {
         user = randomUser();
         userClient = new UserClient();
-        RestAssured.baseURI = ScooterRentSpec.BASE_URI;
+        RestAssured.baseURI = BurgerRentSpec.BASE_URI;
     }
 
     @Test
